@@ -1,0 +1,48 @@
+<style type="text/css">
+a{
+	display: inline-block;
+	border:1px solid red;
+	width: 20px;
+}
+.cur{
+	background-color: yellow;
+
+}
+a:link { 
+	font-size: 18px; 
+	color: #333399; 
+} 
+a:visited { 
+	font-size: 18px; 
+	color: #333399; 
+} 
+a:hover { 
+	font-size: 18px; 
+	color: #999999; 
+	text-decoration: underline; 
+}
+
+.special{
+	border: none;
+	width: 50px;
+}
+.special2{
+	border: none;
+	width: 60px;
+}
+.jump input{
+	width: 50px;
+}
+.jump{
+	margin-top:10px;
+}
+</style>
+<div style='text-align:center;'>
+	{foreach from=$total item=value}
+	{$value['name']} <br/>
+	{/foreach}
+
+	<br>
+	<div id='show'>{$show}</div>
+	<div class='jump'><form action="" method="get"><input type="text" name='p'><button>跳转</button></form></div>
+</div>
