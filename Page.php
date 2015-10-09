@@ -22,9 +22,7 @@ class Page{
 
 
 		//不能超出最大的分页
-		$need = $p * $num;
-
-		if($need > $count){
+		if($p > $max){
 			$this->p = $max;
 		}else if($p < 0){
 			$this->p = 1;
